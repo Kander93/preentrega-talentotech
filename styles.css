@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0b0914;
+    color: #e2dbf0;
+}
+
+header {
+    background-color: #120e24;
+    border-bottom: 2px solid #8b5cf6;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #a78bfa;
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #c084fc;
+}
+
+.hero {
+    background: linear-gradient(rgba(11, 9, 20, 0.85), rgba(11, 9, 20, 0.85)), url('https://unsplash.com') no-repeat center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 1rem;
+    border-bottom: 1px solid #2e2552;
+}
+
+.hero h2 {
+    color: #c084fc;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#nosotros, #productos, #reseñas, #contacto {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#nosotros p {
+    text-align: center;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #a78bfa;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #120e24;
+    border: 1px solid #2e2552;
+    border-radius: 12px;
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #8b5cf6;
+}
+
+.foto-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #171231;
+    border-bottom: 1px solid #2e2552;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a78bfa;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card h3 {
+    color: #fff;
+    margin: 0.5rem 1rem;
+}
+
+.card p {
+    color: #cbd5e1;
+    padding: 0 1rem;
+    font-size: 0.95rem;
+}
+
+.btn-comprar {
+    background-color: #8b5cf6;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+}
+
+.btn-comprar:hover {
+    background-color: #a78bfa;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.resena {
+    background-color: #171231;
+    border-left: 4px solid #c084fc;
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+}
+
+.resena h4 {
+    color: #a78bfa;
+    margin-top: 0.8rem;
+}
+
+.resena-multimedia {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.resena-multimedia h3 {
+    margin-bottom: 1rem;
+}
+
+.resena-multimedia iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: 2px solid #2e2552;
+    border-radius: 8px;
+}
+
+#contacto form {
+    background-color: #120e24;
+    border: 1px solid #2e2552;
+    padding: 2.5rem;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#contacto form label {
+    color: #a78bfa;
+    font-weight: bold;
+}
+
+#contacto form input, #contacto form textarea {
+    background-color: #0b0914;
+    color: #fff;
+    padding: 0.8rem;
+    border: 1px solid #2e2552;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+#contacto form input:focus, #contacto form textarea:focus {
+    outline: none;
+    border-color: #8b5cf6;
+}
+
+#contacto form button {
+    background-color: #8b5cf6;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#contacto form button:hover {
+    background-color: #a78bfa;
+    box-shadow: 0 0 15px rgba(167, 139, 250, 0.4);
+}
+
+footer {
+    background-color: #0b0914;
+    color: #64748b;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid #2e2552;
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .contenedor-grid {
+        grid-template-columns: 1fr;
+    }
+    .resena-multimedia {
+        grid-column: span 1;
+    }
+}
